@@ -1,0 +1,334 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-234-5678 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jin Huang} \\ \vspace{1pt}
+    \small 213-399-4359 $|$ \href{mailto:jinhuang922@gmail.com}{\underline{jinhuang922@gmail.com}} $|$ 
+    \href{https://scholar.google.com/citations?user=V9IzEq8AAAAJ&hl=en}{\underline{Google Scholar}} $|$
+    \href{https://github.com/JinHuang0101}{\underline{GitHub}}
+    $|$
+    U.S. Citizen
+    $|$
+    Portland, Oregon
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oregon State University}{Corvallis, OR}
+      {Bachelor of Science in Computer Science, GPA: 3.92}{Aug. 2020 -- Expct. Dec. 2024}
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Ph.D., M.A. in Communication and Technlogy, Quantitative Social Science}{Sep. 2011 -- May 2018}
+    \resumeSubheading
+      {Huazhong University of Science \& Technology}{Wuhan, China}
+      {Bachelor of Arts in Broadcast and TV Journalism}{Sep. 2004 -- June. 2008}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+     \textbf{Languages}{: Python, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Express-Node.js, Streamlit} \\
+     \textbf{Tools}{: MongoDB, MySQLWorkbench, phpMyAdmin, Github, Google Cloud, VS Code, Jupyter Notebook, Jira} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, seabborn, sklearn}\\
+     \textbf{Data Analytics}{: BigQuery, Tableau, PowerBI, Excel, SPSS}\\
+     \textbf{Statistics}{: Hypothesis Testing, Natural Language Processing, Regression, Exploratory Data Analysis, Sampling}\\
+     \textbf{Research Methods}{: Survey, Interview, Focus Group, Content Analysis}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI Tools Online Marketplace} $|$ \emph{JavaScript, Express-Node.js, SQL, HTML/CSS, server, Github}}{Sep.2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{\textbf{Captain and sole backend \& database developer} of a team of two}
+            \resumeItem{Developed a full-stack web application with HTML/CSS for the frontend and used Express-Node.js to serve a REST API that allows database administrators to perform CRUD operations on the database via a UI}
+            \resumeItem{Used AJAX and Handlebars to dynamically display data from a MySQL database on the frontend page}
+            \resumeItem{Designed and built a MySQL relational database with 5 entities and 2 intersection tables}
+            \resumeItem{Deployed the frontend, backend, and database to the university's remote server}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Stock Galaxy, Pick a Star} $|$ \emph{Python, Streamlit, pandas, matplotlib, prompt engineering}}{Sep. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack web app to retrieve 10 key financial metrics from the 10-K data of all 10726 SEC-listed companies using the SEC EDGAR API}
+            \resumeItem{Used pandas DataFrame and Python dictionary data structures, and sorting algorithms to sort and rank stocks based on various financial metrics}
+            \resumeItem{Integrated a chatbot, powered by OpenAI, into the web app to answer user questions}
+            \resumeItem{No skeleton code, no hardcoded strings; implemented error handling in Python. The program is fully automated, scalable to handle large-scale data, and includes data visualization}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Female Tech Entrepreneur} $|$ \emph{Python, JavaScript, HTML/CSS, prompt engineering}}{Oct. 2023}
+          \resumeItemListStart
+            \resumeItem{Built an AI Agent and a Google Chrome extension using the OpenAI engine for the Major League Hacking Open Source Week}
+            \resumeItem{Published the agent to the AI Agent Community, where it ranked as the \#3 most popular among 2,714 submissions and remained on the most popular page for two weeks}
+          \resumeItemListEnd  
+      \resumeProjectHeading
+          {\textbf{Exercise Tracker} $|$ \emph{JavaScript, HTML/CSS, React, Express-Node.js, MongoDB}}{Present}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack web app using Express-Node.js to serve a REST API, with React for the front-end, and MongoDB as a NoSQL database}
+            \resumeItem{Enabled users to perform CRUD operations on the database, allowing them to keep track of their exercise records}
+            \resumeItem{Deployed the full-stack web app to Netlify for hosting}
+          \resumeItemListEnd
+      \resumeProjectHeading 
+          {\textbf{Kuba Game} $|$ \emph{Python}}{Present}
+          \resumeItemListStart
+            \resumeItem{Built a Command Line Interface program to play Kuba Game uing Object-Oriented Programming design principles without any skeleton code}
+            \resumeItem{Implemented unit testings to verify gameplay functionality}
+          \resumeItemListEnd    
+
+    \resumeSubHeadingListEnd
+
+%-----------ACADEMIC APPOINTMENTS-----------
+\section{Academic Appointments}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Project Manager}{2016 -- 2018}
+      {International Journal of Communication}{ University of Southern California}
+      \resumeItemListStart
+        \resumeItem{Ranked \# 8 among social science journals}
+        \resumeItem{Leader of a team of 10 editorial assistants, managed tasks and deadlines, ensured quality control, conducted scientific paper reviews, and collaborated with 130+ editorial members and 1000+ social scientists in the field of human-computer interaction}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Editorial Assistant}{2014 -- 2016}
+      {International Journal of Communication}{ University of Southern California}
+      \resumeItemListStart
+        \resumeItem{Conducted a weekly review of original research manuscripts, assessing their content, validity, and adherence to publication standards}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{2012 -- 2014}
+      {Annenberg School for Communication \& Journalism}{ University of Southern California}
+      \resumeItemListStart
+        \resumeItem{Project: Developing Communication Network Skills through Penny Harvest}
+        \resumeItem{Project: Value Pursuit in Crowdfunding on Kickstarter}
+        \resumeItem{Project: Local Storytelling and Civic Engagement in the City of Alhambra, Los Angeles}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant}{2012 -- 2014}
+      {Annenberg School for Communication \& Journalism}{ University of Southern California}
+      \resumeItemListStart
+        \resumeItem{Course: Communication, Attitudes and Behaviors (Graduate core, seminar)}
+        \resumeItem{Course: Communication and Mass Media (Undergraduate core, lecture \& discussion)}
+        \resumeItem{Course: Communication and Social Science (Undergraduate core, lecture \& discussion)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Marketing Research Consultant}{June 2010 -- Sep. 2011}
+      {Burson Cohen \& Wolfe, WPP plc, \#1 Ad Agency}{Beijing, China}
+      \resumeItemListStart
+        \resumeItem{Led the design and implementation of the 1st national social media campaign for Lexus China}
+        \resumeItem{Published numerous press releases for Lexus, covering corporate communication and product launches}
+        \resumeItem{Presented a SWOT analysis to the Vice President of Lexus Asia}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{International \& National Awards}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small
+    {\item{
+    \textbf{Top Student Paper Award}{ International Communication Association (Public Relations), Puerto Rico, 2015}
+    }}
+    {\item{
+    \textbf{Top Faculty Paper Award}{ International Communication Association (Public Relations), Puerto Rico, 2015}
+    }}
+    {\item{
+    \textbf{Top Faculty Paper Award}{ National Communication Association (Argumentation and Forensics), Chicago, 2014}
+    }}
+  \end{itemize}  
+
+%-----------Scholarships-----------
+\section{University Scholarships}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small 
+    {\item{
+    Graduate Student Scholarship. University of Southern California. 2012-2016
+    }}
+    {\item{
+    Scholar Symposium Awards. University of Southern California. 2014
+    }}
+    {\item{
+    Annenberg Fellow Research Awards. University of Southern California. 2014
+    }}
+    {\item{
+    Graduate Student Fellowship. University of Southern California. 2011-2012
+    }}
+    {\item{
+    National Scholarship for Overseas Exchange Program. University of Southern California. 2007
+    }}
+    {\item{
+    National Scholarship for Excellent University Freshmen. University of Southern California. 2004 
+    }}
+    {\item{}}
+
+ \end{itemize}    
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+   \small
+   {\item{
+     Goodnight, G.T., Son, M., \textbf{Huang, J.}, \& Crigler, A. (2017). Youth, networks, and civic engagement: Communities of belonging and communities of practice. Speech and Debate as Civic Education, 205-220.
+    }}
+    {\item{
+    \textbf{Huang, J. } (2015). Raising the standing of evaluation in dialogic research: The influence of budget and evaluation style on dialogue implementation. Top Student Paper Award. International Communication Association. Puerto Rico. 
+    }}
+    {\item{
+    \textbf{Huang, J.}, \& Yang, A. (2015). Implementing dialogic communication: A survey of IPR, PRSA, and IABC members. Public Relations Review. 41(3), 376-377. [5-Year Impact Factor=2.086]
+    }}
+    {\item{
+    \textbf{Huang, J.}, \& Yang, A. (2015). Understanding factors affecting organizations’ implementation of dialogic communication: An exploratory study. Top Faculty Paper Award. International Communication Association. Puerto Rico. 
+    }}
+    {\item{
+    Goodnight, G.T., Son, M., \& \textbf{Huang, J.} (2014). Youth, networks and civic engagement: An interim report. Top Faculty Paper Award. The National Communication Association. Chicago. 
+    }}
+    {\item{
+    \textbf{Huang, J.} (2014). The sweetness of solitude in SNS: An integrative model on online privacy, withdrawal, and self-disclosure. International Communication Asociation. Seattle. 
+    }}
+    {\item{
+    Chen, N.T.N., Dong, F., Ball-Rokeach, S.J., Parks, M., \& \textbf{Huang, J.} (2012). Building a new media platform for local storytelling and civic engagement in ethnically diverse neighborhoods. New Media \& Society, 14(6), 931-950. [5-Year Impact Factor=4.18]
+    }}
+    {\item{
+    \textbf{Huang, J.} (2012). The social influences of Facebook friends. InfoSocial Conference. Evanston, IL. 
+    }}
+    {\item{
+    Chen, N.T.N., Ball-Rokeach, S.J., Parks, M., \& \textbf{Huang, J.} (2011). The Alhambra project: A theory-based strategy for the construction of a citizen journalism website. Centres and peripheries: Metropolitan and non-metropolitan journalism in the twenty first century, 255-270. 
+    }}
+    {\item{
+    Chen, N., \& \textbf{Huang, J.} (2009). The Alhambra project: Building a civically engaged community through the re-localization of news in Alhambra, Los Angeles County. The National Communication Association. Chicago. 
+    }}
+    {\item{
+    \textbf{Huang, J.} (2007). Culture elements embedded in the process of European integration. Professional Circle, May 2007.
+    }}
+ \end{itemize}    
+
+%
+
+
+%-------------------------------------------
+\end{document}
